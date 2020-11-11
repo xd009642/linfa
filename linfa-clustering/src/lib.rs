@@ -12,8 +12,7 @@
 //!
 //! ## Current state
 //!
-//! Right now `linfa-clustering` only provides a single algorithm, `K-Means`, with
-//! a couple of helper functions.
+//! Right now `linfa-clustering` provides, `K-Means` `DBSCAN`, `OPTICS` clustering as well as a couple of helper functions.
 //!
 //! Implementation choices, algorithmic details and a tutorial can be found [here](struct.KMeans.html).
 //!
@@ -24,8 +23,10 @@ extern crate ndarray;
 mod dbscan;
 #[allow(clippy::new_ret_no_self)]
 mod k_means;
+mod optics;
 mod utils;
 
 pub use dbscan::*;
 pub use k_means::*;
+pub use optics::*;
 pub use utils::*;
